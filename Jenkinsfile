@@ -49,7 +49,7 @@ pipeline{
             steps {
                 script {
                     withSonarQubeEnv(credentialsId: 'sonar') {
-                        sh "mvn sonar:sonar  -Dsonar.projectKey=spring -Dsonar.token=squ_e087096d5dd44d0cbfcf1e464abb6988adf29016"
+                        sh "mvn sonar:sonar  -Dsonar.projectKey=spring -Dsonar.token=squ_e087096d5dd44d0cbfcf1e464abb6988adf29016 -Dsonar.organization=admin"
                     }
                 }
             }
